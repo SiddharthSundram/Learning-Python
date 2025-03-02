@@ -190,3 +190,142 @@
 #         print(subject)
 # fun("Siddharth","Python","Java","Javascript","Typescript")
 
+## 20. Python program to print the numbers from a given number n till 0 using recursion
+# num = int(input("Enter a number to print the numbers from a given number n till 0 using recursion: "))
+# def dec(n):
+#     if n == 0:
+#         return
+#     print(n)
+#     n = n-1
+#     dec(n)
+# dec(num)
+
+## 21.  Python program to find the factorial of a number using recursion
+# num = int(input("Enter a number to find the factorial of a number using recursion: "))
+# def fact(n):
+#     if n == 0 and n == 0:
+#         return 1
+#     else:
+#         return n*fact(n-1)
+# print(fact(num))
+
+
+## 22. Python program to find the Nth term in a Fibonacci series 
+# n = int(input("Enter a number to find a Fibonacci series : "))
+# fb1 = 0
+# fb2 = 1
+# fb3 = 0
+# if n < 0:
+#     print("Please enter value greater then 0.")
+# elif n >= 0:
+#     print(fb1)
+# elif n >= 1:
+#     print(fb2)
+# for i in range(1,n):
+#     fb3 = fb1 + fb2
+#     print(fb3)
+#     fb1 = fb2
+#     fb2 = fb3
+
+## 23. Python program to find the Nth term in a Fibonacci series using recursion
+# num = int(input("Enter a number to find the Nth term in a Fibonacci series using recursion: "))
+# def fib(n):
+#     if n <= 0:
+#         return ("Please enter value greater then 0.")
+#     elif n == 1:
+#         return 0
+#     elif n == 2:
+#         return 1
+#     else:
+#         return fib(n-1)+fib(n-2)
+# print(fib(num))
+
+
+## path module
+# import sys
+# print(f"Python Path\n{sys.path}")
+
+## using math module
+# from math import pi
+# def area(r):
+#     return pi*r**2
+# print(area(3))
+
+# from math import sqrt as squre_root
+# print(squre_root(81))
+
+# import math
+# x = 3.9
+# y = 4
+# z = 3
+# print(math.ceil(x))
+# print(math.floor(x))
+# print(math.sqrt(y))
+# print(math.pow(y,z))
+
+## creating our own module
+# import My_module
+# n = int(input("Enter a value: "))
+# a = int(input("Enter a value: "))
+# b = int(input("Enter a value: "))
+# print(f"\nFibonacci Term : {My_module.fib(n)}")
+# print(f"Factorial value : {My_module.fact(n)}")
+# print(f"Large value : {My_module.large(a,b)}")
+# print(f"Small value : {My_module.small(a,b)}")
+
+
+## creating OTP 
+# import random, math
+# def generateOTP():
+#     digits = "0123456789"
+#     OTP = ""
+#     for i in range(1,5):
+#         a = random.random()
+#         b = math.floor(a*10)
+#         OTP += digits[b]
+#     return OTP
+# print(f"OTP of 4 digits : {generateOTP()}")
+
+## another way
+# import random, math
+# def generateOTP():
+#     OTP = ""
+#     for i in range(1,5):
+#         a = random.random()
+#         b = math.floor(a*10)
+#         OTP += str(b)
+#     return OTP
+# print(f"OTP of 4 digits : {generateOTP()}")
+
+
+# ## mean median mode of a given set of numbers in a list
+# from statistics import mean, median,mode
+# list1 = [10,23,5,36,7,8,12,43,4,6,77,99,23,123]
+# print(f"Mean : {mean(list1)}")
+# print(f"Median : {median(list1)}")
+# print(f"Mode : {mode(list1)}")
+
+
+## Calculate the square root of the sum of two numbers.
+# import math
+# a = int(input("Enter first number: "))
+# b = int(input("Enter second number: "))
+# result = a + b
+# print(math.sqrt(result))
+
+##  Calculate the circumference and area of a circle.
+# import math
+# r = int(input("Enter radius: "))
+# circum = 2 * math.pi *r
+# area = math.pi*r**2
+# print(circum)
+# print(area)
+
+
+## Calculate the trigonometric functions of an angle.
+# import math
+# r = int(input("Enter an angle in degrees.: "))
+# rad = math.radians(r)
+# print(f"Sine : {math.sin(rad)}")
+# print(f"Cosine : {math.cos(rad)}")
+# print(f"Tangent : {math.tan(rad)}")
