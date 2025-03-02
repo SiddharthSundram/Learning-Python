@@ -116,7 +116,7 @@
 #         print(n)
 
 
-# 11.to display the given integer in reverse
+# #11.to display the given integer in reverse
 # n = int(input("Enter a numbers to display the given integer in reverse "))
 # rev = 0
 # while n>0:
@@ -124,3 +124,69 @@
 #     rev = (rev*10)+ d  
 #     n = n // 10
 # print(rev)
+
+
+##12. multliply list of given number
+# def multi(numbers):
+#     total = 1
+#     for i in numbers:
+#         total *= i
+#     return total
+# print(multi([1,2,3,4,5]))
+
+
+## 13. factorial of any number recursively
+# def fact(num):
+#     if num == 1 or num == 0:
+#         return 1
+#     else:
+#         return num*fact(num - 1)
+# num = int(input("Enter a number to get its factorial: "))
+# print(f"Factorial of {num} is {fact(num)}")
+
+## 14. lambda function as a argument to a function
+# def fun(f,n):
+#     print(f(n))
+# twice = lambda x:x*2
+# thrice = lambda x:x*3
+# fun(twice,4)
+# fun(thrice,3)
+
+## 15. program to find sum of first 10 natural number use lambda fn
+# x = lambda :sum((range(1,11)))
+# print(x())
+
+
+## 16. passing lambda function as a argument of regular function
+# def small(a,b):
+#     if a> b:
+#         return b
+#     else:
+#         return a
+# sum = lambda x,y : x+y
+# diff = lambda x,y : x-y
+# print(f"Smaller of two number: {small(sum(-3,-2),diff(-1,2))}")
+
+## 17. default agfuments 
+# def student(name,course = "MCA"):
+#     print(f"Name: {name}")
+#     print(f"Course: {course}")
+# student('Siddharth')
+# student(name='Siddharth')
+
+## 18. keyword argument : in this we can change the order of arguments 
+# def  display11(name,age,salary):
+#     return (f"Name : {name} \nAge : {age} \nSalary : {salary}")
+# n = "Siddharth Sundram"
+# a = "20"
+# s = "56000000"
+# result = display11(salary=s,name=n,age=a)
+# print(result)
+
+## 19. variable length args : length or number of args will multiple or unknown
+# def fun(name,*subjects):
+#     print(f"\n{name}is likely to read")
+#     for subject in subjects:
+#         print(subject)
+# fun("Siddharth","Python","Java","Javascript","Typescript")
+
