@@ -329,3 +329,143 @@
 # print(f"Sine : {math.sin(rad)}")
 # print(f"Cosine : {math.cos(rad)}")
 # print(f"Tangent : {math.tan(rad)}")
+
+
+
+## learning list
+# lst1 = [12,32,56,87,43,88,12,53,83,12,16,31]
+# print(lst1[0])
+# print(lst1[3])
+# print(lst1[2:5])#slicing
+# print(lst1[2:])
+# print(lst1[:5])
+# print(lst1[-1])
+# print(lst1[-5])
+
+# for i in lst1:
+#     print(i)
+#     print(i, end=" ")
+
+# n = len(lst1)
+# for i in range(n):
+#     print(lst1[i])
+    # print(lst1[i], end=" ")
+
+# del lst1[0] #delete from list
+# print(lst1)
+
+# print(lst1.index(87)) # to find index of element
+
+# print(lst1.count(12))  # use to count frequency of element
+
+# print("Original :",lst1)
+# lst1.append(20) # use to add element in the list
+# print("After append :",lst1)
+
+# print("Original :",lst1)
+# lst1.remove(12) # use to add element in the list
+# print("After remove :",lst1)
+
+# print("Original list : ",lst1)
+# lst1 = ["Hello",23,4.21,300]
+# print("Modified list : ",lst1)
+
+## multi-dimensional list
+# lst2 = [[1,2,3],[4,5,6],[7,8,9]]
+# print(lst2[0])
+# print(lst2[0][0])
+# print(lst2[0][2])
+# print(lst2[2][2])
+
+## nested list
+# lst2 =[1,2,[4,5,6,7,8]]
+# print(lst2)
+# print(lst2[1])
+# print(lst2[2])
+# print(lst2[2][2])
+
+
+# ## Tuple
+# tpl1 = (1,2,3,4,5,6,7,7,8,9)
+# print(tpl1)
+# print(tpl1[1])
+# print(tpl1[1:4])
+# print(tpl1[1:])
+# print(tpl1[:3])
+
+# tpl2 = 1,2,3,4,5,6,7,8  # Tuple can be created by assining multiple value to single variable
+# print(tpl2, type(tpl2))
+
+
+# ## Set
+# set1 = {1,2,3,4}
+# set2 = {5,6,7,8}
+# print(set1,type(set1))
+# print(set())# creating empty set
+# print(1 in set1) # way to check that element 1 is in set1 or not
+# print(9 in set2) # way to check that element 9 is in set2 or not
+
+
+## Dictionary
+# dict1 = {"x":1,"y":2,"z":3}
+# print(dict1, type(dict1))
+# print(dict1["x"])
+# dict1["y"] = 123 #changing value using assignment operator
+# print(dict1)
+# dict1["w"] = 30 #adding new key: value using assignment operator
+# print(dict1)
+# print(dict1.get("a"))    #getting value using get() by putting key in it.
+# print(dict1.get("x"))    
+# myDict = {1:"Siddharth",3:2,"Roll":6}
+# print(myDict)
+
+
+## 24. Write a Python program to display the sum of n numbers using a list.
+# num =[]
+# inp  = int(input("Enter limit: "))
+# for i in range(inp):
+#     x = int(input(f"Enter {i}th number: "))
+#     num.append(x)
+# print(f"Sum of n numbers using list = {sum(num)}")
+
+##25. Write a Python program to implement linear search on a List of elements
+# lmt  = int(input("Enter limit of list: "))
+# list1 =[]
+# for i in range(lmt):
+#     x = int(input(f"Enter {i}th number: "))
+#     list1.append(x)
+# print("Your entered list : ",list1)
+# search = int(input("Enter the search element number: "))
+# found = False
+# for item in range(len(list1)):
+#     if list1[item] == search:
+#         print(f"Element {search} is found on index {item}.")
+#         found = True
+#         break
+# if found == False:
+#     print(f"Element {search} is not found in list.")
+    
+## 26. Write a Python program to find the odd numbers in a List.
+# lmt  = int(input("Enter limit of list: "))
+# list1 =[]
+# for i in range(lmt):
+#     x = int(input(f"Enter {i}th number: "))
+#     list1.append(x)
+# print("Your entered list : ",list1)
+# oddNum = []
+# for item in range(len(list1)):
+#     if list1[item] % 2 != 0:
+#         oddNum.append(list1[item])
+# print(f"Odd Number list : {oddNum}")
+
+## 27. Write a Python program to print all the items in a dictionary.
+# my_dict = {
+#     "name": "Siddharth",
+#     "age": 20,
+#     "city": "Kolkatta",
+#     "occupation": "Engineer"
+# }
+# print("Dictionary items:")
+# for key, value in my_dict.items():
+#     print(f"{key}: {value}")
+
