@@ -148,11 +148,171 @@
 
 
 ## remove method
-lst1 = ['Monday','Friday','Thursday','Tuesday','Sunday']
+# lst1 = ['Monday','Friday','Thursday','Tuesday','Sunday']
+# print(lst1,len(lst1),type(lst1),id(lst1))
+# lst1.remove("Monday")
+# print(lst1,len(lst1),type(lst1),id(lst1))
+# lst1.remove("Friday")
+# print(lst1,len(lst1),type(lst1),id(lst1))
+# lst1.remove("Tuesday")
+# print(lst1,len(lst1),type(lst1),id(lst1))
+# lst1.remove("Thursday")
+# print(lst1,len(lst1),type(lst1),id(lst1))
+# lst1.remove("Sunday")
+# print(lst1,len(lst1),type(lst1),id(lst1))
+# lst1.remove("Sunday")
+# print(lst1,len(lst1),type(lst1),id(lst1))  #generate valueError  as Sunday is not in list.
+
+
+## pop method 
+
+# lst1 = ['Monday','Friday','Thursday','Tuesday','Sunday']
+# print(lst1,len(lst1),type(lst1),id(lst1))
+# lst1.pop()
+# print(lst1,len(lst1),type(lst1),id(lst1))
+# lst1.pop(2)
+# print(lst1,len(lst1),type(lst1),id(lst1))
+
+
+## updating operation on list
+
+# lst1 = ['Monday','Friday','Thursday','Tuesday','Sunday']
+# print(lst1,len(lst1),type(lst1),id(lst1))
+# lst1[1] = "Wednesday"
+# print(lst1,len(lst1),type(lst1),id(lst1))
+
+
+## list concatination 
+# lst1 = ['Monday','Friday','Thursday']
+# print(lst1,len(lst1),type(lst1),id(lst1))
+# lst2 = ['Tuesday','Sunday','Wednesday']
+# print(lst2,len(lst2),type(lst2),id(lst2))
+
+# ## using + operator
+# result = lst1 +lst2  #concatination
+# print(result,len(result),type(result),id(result))
+
+# ## using extend method
+# lst1.extend(lst2)  ## will add the all the elemnts of lst2 in lst1 
+# print(lst1,len(lst1),type(lst1),id(lst1))
+
+## += operator
+# lst1 += lst2  ## will add the all the elemnts of lst2 in lst1 
+# print(lst1,len(lst1),type(lst1),id(lst1))
+
+
+## list of lists / multi-dimensional list
+# lst1 = ['Monday','Friday','Thursday']
+# print(lst1,len(lst1),type(lst1),id(lst1))
+# lst2 = ['Tuesday','Sunday','Wednesday']
+# print(lst2,len(lst2),type(lst2),id(lst2))
+
+# result = [lst1 ,lst2 ] #list of lists
+# print(result,len(result),type(result),id(result))
+
+## slicing
+# lst1 = [['Monday', 'Thursday','Saturday','Tuesday',], ['Friday', 'Sunday']]
+# print(lst1,len(lst1),type(lst1),id(lst1))
+# print(lst1[0][1],lst1[-2][-3],lst1[1][1],lst1[-1][-1])
+
+# print(lst1[0][2][2:5],lst1[-2][-2][-6:-3])
+
+
+
+## sort method
+# lst1 = [12,34,53,11,67,85,23,78,24]
+# print(lst1,len(lst1),type(lst1),id(lst1))
+
+# lst1.sort() # will sort in existing list
+# print(lst1,len(lst1),type(lst1),id(lst1))
+
+# lst1.sort(reverse= True)
+# print(lst1,len(lst1),type(lst1),id(lst1))
+
+
+
+# lst1 = [12,34,53,11,67,85,23,78,24]
+# print(lst1,len(lst1),type(lst1),id(lst1))
+
+# result = sorted(lst1)  # will crete a new list
+# print(lst1,len(lst1),type(lst1),id(lst1))
+# print(result,len(result),type(result),id(result)) 
+
+# result = sorted(lst1, reverse=True)
+# print(result,len(result),type(result),id(result))
+
+
+## count method
+# lst1 = ['Friday','Monday','Tuesday','Friday','Tuesday','Thursday','Friday','Tuesday','Sunday']
+# print(lst1,len(lst1),type(lst1),id(lst1))
+# print(lst1.count("Friday"), lst1.count("Tuesday"))
+
+
+
+# lst1 = ['Friday','Monday','Tuesday','Thursday','Friday','Sunday']
+# print(lst1,len(lst1),type(lst1),id(lst1))
+
+# lst2 = lst1
+# print(lst2,len(lst2),type(lst2),id(lst2))
+
+# lst1[0] = "Wednesday"
+# print(lst1,len(lst1),type(lst1),id(lst1))
+# print(lst2,len(lst2),type(lst2),id(lst2))  # will change both list because in python when we assign one variable to another it give its reference to the memory location 
+
+
+
+# lst1 = ['Friday','Monday','Tuesday','Thursday','Friday','Sunday']
+# print(lst1,len(lst1),type(lst1),id(lst1))
+
+# lst2 = lst1
+# lst2[:] = lst1
+# print(lst2,len(lst2),type(lst2),id(lst2))
+
+# lst1[1] = "Saturday"
+# print(lst1,len(lst1),type(lst1),id(lst1))
+# print(lst2,len(lst2),type(lst2),id(lst2)) 
+
+
+## using copy method
+# lst1 = ['Friday','Monday','Tuesday','Thursday','Friday','Sunday']
+# print(lst1,len(lst1),type(lst1),id(lst1))
+
+# lst2 = lst1.copy()
+# print(lst2,len(lst2),type(lst2),id(lst2))
+
+# lst1[0] = "Monday"
+# print(lst1,len(lst1),type(lst1),id(lst1))
+# print(lst2,len(lst2),type(lst2),id(lst2)) 
+
+
+## all method
+# lst1 = ['Friday','Monday','Tuesday','Thursday','Friday','Sunday']
+# print(lst1,len(lst1),type(lst1),id(lst1))
+# print(all(lst1)) ## return True when  all the term in list is true
+
+# lst1 = ['Friday','Monday',False,'Tuesday','Thursday','Friday','Sunday']
+# print(lst1,len(lst1),type(lst1),id(lst1))
+# print(all(lst1))
+
+
+## any method
+# lst1 = ['Friday','Monday','Tuesday','Thursday','Friday','Sunday']
+# print(lst1,len(lst1),type(lst1),id(lst1))
+# print(any(lst1)) ## return True when any of the term in list is true
+
+# lst1 = ['Friday','Monday',False,'Tuesday','Thursday','Friday','Sunday']
+# print(lst1,len(lst1),type(lst1),id(lst1))
+# print(any(lst1))
+
+# lst1 = [False,False,False,False]
+# print(lst1,len(lst1),type(lst1),id(lst1))
+# print(any(lst1))
+
+
+def myFunc(mylst):
+    mylst[3] = "Wednesday"
+
+lst1 = ['Friday','Monday','Tuesday','Thursday','Sunday']
 print(lst1,len(lst1),type(lst1),id(lst1))
-lst1.remove("Monday")
-print(lst1,len(lst1),type(lst1),id(lst1))
-lst1.remove("Friday")
-print(lst1,len(lst1),type(lst1),id(lst1))
-lst1.remove("Tuesday")
+myFunc(lst1)
 print(lst1,len(lst1),type(lst1),id(lst1))
