@@ -241,61 +241,6 @@
 # print(fib(num))
 
 
-## path module
-# import sys
-# print(f"Python Path\n{sys.path}")
-
-## using math module
-# from math import pi
-# def area(r):
-#     return pi*r**2
-# print(area(3))
-
-# from math import sqrt as squre_root
-# print(squre_root(81))
-
-# import math
-# x = 3.9
-# y = 4
-# z = 3
-# print(math.ceil(x))
-# print(math.floor(x))
-# print(math.sqrt(y))
-# print(math.pow(y,z))
-
-## creating our own module
-# import My_module
-# n = int(input("Enter a value: "))
-# a = int(input("Enter a value: "))
-# b = int(input("Enter a value: "))
-# print(f"\nFibonacci Term : {My_module.fib(n)}")
-# print(f"Factorial value : {My_module.fact(n)}")
-# print(f"Large value : {My_module.large(a,b)}")
-# print(f"Small value : {My_module.small(a,b)}")
-
-
-## creating OTP 
-# import random, math
-# def generateOTP():
-#     digits = "0123456789"
-#     OTP = ""
-#     for i in range(1,5):
-#         a = random.random()
-#         b = math.floor(a*10)
-#         OTP += digits[b]
-#     return OTP
-# print(f"OTP of 4 digits : {generateOTP()}")
-
-## another way
-# import random, math
-# def generateOTP():
-#     OTP = ""
-#     for i in range(1,5):
-#         a = random.random()
-#         b = math.floor(a*10)
-#         OTP += str(b)
-#     return OTP
-# print(f"OTP of 4 digits : {generateOTP()}")
 
 
 # ## mean median mode of a given set of numbers in a list
@@ -329,60 +274,6 @@
 # print(f"Sine : {math.sin(rad)}")
 # print(f"Cosine : {math.cos(rad)}")
 # print(f"Tangent : {math.tan(rad)}")
-
-
-
-## learning list
-# lst1 = [12,32,56,87,43,88,12,53,83,12,16,31]
-# print(lst1[0])
-# print(lst1[3])
-# print(lst1[2:5])#slicing
-# print(lst1[2:])
-# print(lst1[:5])
-# print(lst1[-1])
-# print(lst1[-5])
-
-# for i in lst1:
-#     print(i)
-#     print(i, end=" ")
-
-# n = len(lst1)
-# for i in range(n):
-#     print(lst1[i])
-    # print(lst1[i], end=" ")
-
-# del lst1[0] #delete from list
-# print(lst1)
-
-# print(lst1.index(87)) # to find index of element
-
-# print(lst1.count(12))  # use to count frequency of element
-
-# print("Original :",lst1)
-# lst1.append(20) # use to add element in the list
-# print("After append :",lst1)
-
-# print("Original :",lst1)
-# lst1.remove(12) # use to add element in the list
-# print("After remove :",lst1)
-
-# print("Original list : ",lst1)
-# lst1 = ["Hello",23,4.21,300]
-# print("Modified list : ",lst1)
-
-## multi-dimensional list
-# lst2 = [[1,2,3],[4,5,6],[7,8,9]]
-# print(lst2[0])
-# print(lst2[0][0])
-# print(lst2[0][2])
-# print(lst2[2][2])
-
-## nested list
-# lst2 =[1,2,[4,5,6,7,8]]
-# print(lst2)
-# print(lst2[1])
-# print(lst2[2])
-# print(lst2[2][2])
 
 
 # ## Tuple
@@ -469,3 +360,24 @@
 # for key, value in my_dict.items():
 #     print(f"{key}: {value}")
 
+
+
+## sum of all element of list
+# l = [1,2,3,4,5,6,7,8,99,10]
+# total = 0
+# for i in l:
+#     total += i
+# print(f"Total is {total}")
+
+## concatnate lists
+# l1 = [1,2,3]
+# l2 = [4,5,6]
+# l3 = l1+l2
+# print(l1)
+# print(l2)
+# print(l3)
+
+## * operation
+# l1 = [1,2,3]
+# l3 = l1* 10 ## will repeate 10 times the list l1
+# print(l3)
