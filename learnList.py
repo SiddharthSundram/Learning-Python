@@ -106,3 +106,53 @@
 # result = frozenset(mystr)
 # print(result,len(result),type(result),id(result))
 
+## insert operation on list
+# lst1 = ["Monday","Thursday","Tuesday","Sunday"]
+# print(lst1,len(lst1),type(lst1),id(lst1))
+# lst1.append("Saturday")
+# print(lst1,len(lst1),type(lst1),id(lst1))
+# lst1.append("Friday")
+# print(lst1,len(lst1),type(lst1),id(lst1))
+# lst1.append("Wednesday")
+# print(lst1,len(lst1),type(lst1),id(lst1))
+
+
+# lst1 = ["Monday","Thursday","Tuesday","Sunday"]
+# print(lst1,len(lst1),type(lst1),id(lst1))
+# lst1.insert(3,"Saturday")
+# print(lst1,len(lst1),type(lst1),id(lst1))
+# lst1.insert(3,"Friday")
+# print(lst1,len(lst1),type(lst1),id(lst1))
+# lst1.insert(1,"Wednesday")
+# print(lst1,len(lst1),type(lst1),id(lst1))
+# lst1.insert(100,"Weekday")
+# print(lst1,len(lst1),type(lst1),id(lst1))
+# print(lst1[7]) ## will print Weekday because python will remove all the garbage/empty space in-between Sunday and Weekday indexes
+
+
+
+## delete operation on list
+
+## clear method
+# lst1 = ["Monday","Thursday","Tuesday","Sunday"]
+# print(lst1,len(lst1),type(lst1),id(lst1))
+# lst1.clear()
+# print(lst1,len(lst1),type(lst1),id(lst1)) # will print empty list
+
+
+## del method
+# lst1 = ["Monday","Thursday","Tuesday","Sunday"]
+# print(lst1,len(lst1),type(lst1),id(lst1))
+# del lst1
+# print(lst1,len(lst1),type(lst1),id(lst1)) # will generate an nameError  because list is compeletely deleted
+
+
+## remove method
+lst1 = ['Monday','Friday','Thursday','Tuesday','Sunday']
+print(lst1,len(lst1),type(lst1),id(lst1))
+lst1.remove("Monday")
+print(lst1,len(lst1),type(lst1),id(lst1))
+lst1.remove("Friday")
+print(lst1,len(lst1),type(lst1),id(lst1))
+lst1.remove("Tuesday")
+print(lst1,len(lst1),type(lst1),id(lst1))
