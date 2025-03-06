@@ -361,6 +361,29 @@
 #     print(f"{key}: {value}")
 
 
+## 28. find vowels and consonent in a string
+# mystr = input("Enter a string: ").lower()
+# vcount = ccount = 0
+# for i in mystr:
+#     if(i.isalpha()):
+#         if(i in 'aeiou'): vcount+=1
+#         else: ccount+=1
+# print(f"The number of vowel is {vcount} and consonent is {ccount}.")
+
+
+# ## 29.Create a countdown function  
+# import time
+# def countDown(user_time):
+#     while user_time > 0:
+#         min ,sec = divmod(user_time,60)
+#         timer = '{:02d}:{:02d}'.format(min,sec)
+#         time.sleep(1)
+#         user_time -= 1
+#     print("Countdown Off !!!")
+    
+# if __name__ == '__main__':
+#     user_time = int(input("Enter a time in second: "))
+#     countDown(user_time)
 
 ## sum of all element of list
 # l = [1,2,3,4,5,6,7,8,99,10]
