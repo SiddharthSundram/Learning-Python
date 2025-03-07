@@ -503,3 +503,69 @@
 #         buffer = file.read(10)
 #         file2.write(buffer)
 # print("File copied.")
+
+
+# ## 36. Write a python program to match a string that has an 'a' followed by anything,ending in 'b'.
+# import re
+# def matching(text):
+#     pattern = 'a.*?b$' ## .(dot)-> repersent 1 character,* -> represent any number of character and repeated multiple times and $ -> indicate ending with b
+#     if re.search(pattern,text):
+#         print("Match found.")
+#     else:
+#         print("Match not found.")
+# matching('abosrb')
+# matching('apple')
+# matching('plafjjkafjkje')
+# matching('addressaahhufapleB')  # match not found as it is case sensetive
+
+
+## 37. Write a python program that matches a string that only upper case letters
+# import re
+# def matching(text):
+#     pattern = '^[A-Z]*$'
+#     if re.search(pattern,text):
+#         print("Match found")
+#     else:
+#         print("Match not found")
+# matching('APPLE')
+# matching('abbee')
+
+
+## 38. Write a python program that matches a string that only lower case letters
+# import re
+# def matching(text):
+#     pattern = '^[a-z]*$'
+#     if re.search(pattern,text):
+#         print("Match found")
+#     else:
+#         print("Match not found")
+# matching('APPLE')
+# matching('abbee')
+
+
+## 39. Write a python program that matches a string that has lower and upper case letters ,digits ,underscore (_)
+# import re
+# def matching(text):
+#     pattern = '^[a-zA-Z0-9_]*$'
+#     if re.search(pattern,text):
+#         print("Match found")
+#     else:
+#         print("Match not found")
+# matching('APPLE')
+# matching('_AP98artyPLE')
+# matching('abbee44')
+# matching('Abbee_65')
+
+
+## 40. Write python program that matches a word contaning z.
+# import re
+# def matching(text):
+#     pattern = '\w*z.\w*'
+#     if re.search(pattern,text):
+#         print("Match found")
+#     else:
+#         print("Match not found")
+# matching('abbeezhhh')
+# matching('APPLE664')
+# matching('_AP98artyPLE')
+# matching('Abbee_65')
