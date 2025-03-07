@@ -148,10 +148,66 @@
 #     print(i , end=", ")
 
 ## find vowels and consonent in a string
-mystr = input("Enter a string: ").lower()
-vcount = ccount = 0
-for i in mystr:
-    if(i.isalpha()):
-        if(i in 'aeiou'): vcount+=1
-        else: ccount+=1
-print(f"The number of vowel is {vcount} and consonent is {ccount}.")
+# mystr = input("Enter a string: ").lower()
+# vcount = ccount = 0
+# for i in mystr:
+#     if(i.isalpha()):
+#         if(i in 'aeiou'): vcount+=1
+#         else: ccount+=1
+# print(f"The number of vowel is {vcount} and consonent is {ccount}.")
+
+## function to print each element
+# mystr = 'Hello'
+# index = 0
+# for i in mystr:
+#     print(f"message[{index}] = {i}")
+#     index += 1
+
+
+##  ****      formatting in string        ****
+# %c - character
+# %d or %i - signed decimal integer
+# %s - string
+# %u - unsigned  decimal integer
+# %o - octal interger
+# %x or %X - Hexadecimal integer
+# %e or %E - Exponentiation notaion
+# %f - floating point notaion
+# %g or %G - Short number in floating or exponential notation 
+
+## Examples:
+# name = "Siddharth"
+# age = 20
+# print("Name = %s and Age = %d "%(name,age))
+# print("Name = %s and Age = %d "%("Saurav",20))
+
+# i = 1
+# j= 2.334
+# ch = 'S'
+# str1 = "Siddharth"
+# print("Str1 = %s , i = %d , ch = %c and j = %f "%(str1,i,ch,j))
+
+## reverse a string
+# def revStr(str1):
+#     new_str=''
+#     i = len(str1)-1
+#     while i >= 0:
+#         new_str += str1[i]
+#         i -= 1
+#     return new_str
+# str1 = input("Enter a string: ")
+# print(revStr(str1))
+
+## palindrome or not
+def revStr(str1):
+    new_str=''
+    i = len(str1)-1
+    while i >= 0:
+        new_str += str1[i]
+        i -= 1
+    if new_str == str1:
+        return f"{new_str} is a palindrome."
+    else: 
+        return f"{new_str} is not a palindrome."
+str1 = input("Enter a string: ")
+print(revStr(str1))

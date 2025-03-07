@@ -404,3 +404,83 @@
 # l1 = [1,2,3]
 # l3 = l1* 10 ## will repeate 10 times the list l1
 # print(l3)
+
+
+## 30. Write a Python program to check whether a string is palindrome or not ?
+# def palindrome(str1):
+#     i = len(str1)-1
+#     new_str =''
+#     while i>= 0:
+#         new_str += str1[i]
+#         i -= 1
+#         if new_str == str1:
+#             return f"{str1} is a palindrome."
+#         else:
+#             return f"{str1} is not a palindrome." 
+# str1 = input("Enter a string: ")
+# print(palindrome(str1))
+
+## 31. Write  a Python program to Count the Number of matching characters in a pair of string.
+# def countChar(str1,str2):
+#     c = 0
+#     found = ''
+#     for i in str1:
+#         if i in str2:
+#             if i in found:
+#                 continue
+#             else:
+#                 c += 1
+#                 found += i
+#         else:
+#             pass
+#     return f"Total characters match found in both string is : {c}."
+# str1 = input("Enter first string: ")
+# str2 = input("Enter second string: ")
+# print(countChar(str1,str2))
+
+
+## another method
+# def count(str1 ,str2) :
+#         set_string1 = set(str1)
+#         set_string2 = set(str2)
+#         matched_characters = set_string1 & set_string2
+#         print("No. of matching characters are : " + str(len(matched_characters)) )
+# str1 = 'aabcddekll12@'
+# str2 = 'bb2211@55k'
+# count( str1 , str2 )
+
+## 32. Write a python program to Remove all duplicates from a given string.
+# str1 = input("Enter a string: ")
+# str1 = set(str1)
+# found = ''
+# for i in str1:
+#     if i in found:
+#         pass
+#     else:
+#         found += i
+# print(found)    
+# print(str(str1))
+
+## another way
+# def removeDuplicate(str):
+#     s=set(str)
+#     s="".join(s)
+#     print("Without Order:",s)
+#     t=""
+#     for i in str:
+#         if(i in t):                               
+#             pass
+#         else:
+#             t=t+i
+#     print("With Order:",t)
+# str=input("Enter a string: ")
+# removeDuplicate(str)
+
+
+## 33. remove bracket form an algebric expression.
+# def removeBracket(str1):
+#     for i in str1:
+#         if i not in '()':
+#             print(i,end='')
+# str1 = input("Enter an expression: ")
+# removeBracket(str1)
