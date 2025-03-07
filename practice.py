@@ -484,3 +484,22 @@
 #             print(i,end='')
 # str1 = input("Enter an expression: ")
 # removeBracket(str1)
+
+
+##34. write a program that accept filename as a input form user. Open the file and count the number of times a character apperas in file.
+# filename = input("Enter filename (Ex:- filename.txt) : ")
+# with open(filename) as file:
+#     text = file.read() 
+#     letter = input("Enter the caracter to be searched: ")
+#     count = 0
+#     for char in text:
+#         if char == letter:
+#             count +=1
+# print("Count: ", count)
+
+##35. write a program to copy first 10 bites of a binary file into another.
+# with open('file.txt','rb') as file:
+#     with open("newFile.txt",'wb') as file2:
+#         buffer = file.read(10)
+#         file2.write(buffer)
+# print("File copied.")
