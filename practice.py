@@ -535,3 +535,53 @@
 # matching('APPLE664')
 # matching('_AP98artyPLE')
 # matching('Abbee_65')
+
+## 41. Write a Python program to count the number of characters (character frequency) in a string.
+# s = input("Enter a string: ")
+# count = ''
+# for i in s:
+#     n = s.count(i)
+#     if n > 1:
+#         if i in count:
+#             continue
+#         count += i
+#     print(f"{i} occurs {n} times in {s}.")
+        
+## another
+# def char_frequency(str1):
+#     dict = {}
+#     for n in str1:
+#         keys = dict.keys()
+#         if n in keys:
+#             dict[n] += 1
+#         else:
+#             dict[n] = 1
+#     return dict
+# print(char_frequency('google.com'))
+
+## 42. Write a Python program to count the occurrences of each word in a given sentence.
+# def word_count(str):
+#     counts = dict()
+#     words = str.split()
+#     for word in words:
+#         if word in counts:
+#             counts[word] += 1
+#         else:
+#             counts[word] = 1
+#     return counts
+# print( word_count('the quick brown fox jumps over the lazy dog.'))
+
+
+## 43. Write a program to Reverse a List in Python.
+# lst = [1,2,8,3,5]
+# rev = lst[::-1]
+# print(rev)
+
+
+lst1 = [(1, 2), (5, 7), (3, 6),(1, 2), (5, 7), (3, 6), (1, 2),(2,3)]
+for i in lst1:
+    if i in lst1:
+         lst1.remove(i)
+    else:
+        pass
+print(lst1)
