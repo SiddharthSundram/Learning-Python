@@ -578,10 +578,38 @@
 # print(rev)
 
 
-lst1 = [(1, 2), (5, 7), (3, 6),(1, 2), (5, 7), (3, 6), (1, 2),(2,3)]
-for i in lst1:
-    if i in lst1:
-         lst1.remove(i)
-    else:
-        pass
-print(lst1)
+'''
+46. Write a Python program to remove all the duplicated tuples from the given list.
+Examples:
+Input : [(1, 2), (5, 7), (3, 6), (1, 2)]
+Output : [(1, 2), (5, 7), (3, 6)]
+
+'''
+# def removeDuplicates(lst):
+#     return [t for t in (set(tuple(i) for i in lst))]
+# lst = [(1, 2), (5, 7), (3, 6), (1, 2)]
+# print(removeDuplicates(lst))
+
+# # Another method
+# list_input=[(1,2),(2,3),(3,4),(2,3)]
+# output=list(set(list_input))
+# print(output,type(output))
+
+'''
+ 45. Remove adjacent duplicate characters from a string
+Given a string, remove adjacent duplicates characters from it. In other words, remove all consecutive
+same characters except one.
+For example,
+Input:  AABBBCDDD
+Output: ABCD
+
+'''
+def remove_adjacent_duplicates(s):
+    result = []
+    for i in range(len(s)):
+        if i == 0 or s[i] != s[i - 1]:
+            result.append(s[i])
+    return ''.join(result)
+input_string = "aaabbccdaa"
+output_string = remove_adjacent_duplicates(input_string)
+print("String after removing adjacent duplicates:", output_string)
