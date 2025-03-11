@@ -604,12 +604,38 @@ Input:  AABBBCDDD
 Output: ABCD
 
 '''
-def remove_adjacent_duplicates(s):
-    result = []
-    for i in range(len(s)):
-        if i == 0 or s[i] != s[i - 1]:
-            result.append(s[i])
-    return ''.join(result)
-input_string = "aaabbccdaa"
-output_string = remove_adjacent_duplicates(input_string)
-print("String after removing adjacent duplicates:", output_string)
+# def remove_adjacent_duplicates(s):
+#     result = []
+#     for i in range(len(s)):
+#         if i == 0 or s[i] != s[i - 1]:
+#             result.append(s[i])
+#     return ''.join(result)
+# input_string = "aaabbccdaa"
+# output_string = remove_adjacent_duplicates(input_string)
+# print("String after removing adjacent duplicates:", output_string)
+
+
+## WAP to take a list from user and print alternative elements.
+# l=[]
+# n = int(input("How many element you want to enter: "))
+# print(f'Enter {str(n)} elements.')
+# for i in range(n):
+#     l.append(int(input("Enter element: ")))
+# print(f"The element in the list is : {l}")
+# print("Alternate elements are: ")
+# for i in range(0,n,2):
+#     print(l[i])
+    
+
+## WAP to find maximum element from the list
+l=[]
+n = int(input("How many element you want to enter: "))
+print(f'Enter {str(n)} elements.')
+for i in range(n):
+    l.append(int(input("Enter element: ")))
+print(f"The list is : {l}")
+max = 0
+for i in range(0,n):
+    if l[i] > max:
+        max = l[i]
+print(f"The maximum value is : {max}")
