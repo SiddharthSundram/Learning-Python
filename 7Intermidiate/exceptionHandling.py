@@ -42,3 +42,12 @@
 # x = 'hello'
 # if not type(x) is int:
 #     raise TypeError("Only integer are allowed.")
+
+
+
+
+x = ('apple','mango','barry')
+
+y = enumerate(x)
+print(y)
+print(list(y)) # will return in this format [(index1,value1),(index2,value2),(index3,value3)]
